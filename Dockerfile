@@ -26,8 +26,12 @@ RUN set -xe \
     && usermod -aG sudo user \
     && echo "user ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/user \
     && chmod 0440 /etc/sudoers.d/user 
+    # && npm i -g n
+    # && n stable
 
 USER user:user
+
+# COPY id_rsa /home/user/.ssh
 
 WORKDIR /home/user
 
