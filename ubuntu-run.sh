@@ -1,7 +1,8 @@
 #!/bin/bash
 # Bash Menu Script Example
 # https://askubuntu.com/questions/1705/how-can-i-create-a-select-menu-in-a-shell-script
-#docker run -p 8080:80 --rm -it -v -v /shapiro/Documents/vscode/:/home/user/ ubuntu-run
+# https://computingforgeeks.com/run-ubuntu-linux-in-docker-with-desktop-environment-and-vnc/
+# docker run -p 8080:80 --rm -it -v -v /shapiro/Documents/vscode/:/home/user/ ubuntu-run
 
 #-e TZ=UTC	Timezone.
 #-p 8080:80	Expose Nginx on localhost:8080.
