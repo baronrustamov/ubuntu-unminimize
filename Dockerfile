@@ -20,7 +20,8 @@ ENV LC_ALL ru_RU.UTF-8
 RUN yes | unminimize
 
 RUN set -xe \
-    && apt-get install -y vim perl wget tar man sudo adduser netstat-nat net-tools curl w3m fish nginx npm git \
+    && apt-get install -y vim perl wget tar man sudo adduser netstat-nat net-tools curl w3m fish nginx npm git iptables \
+    # && apt-get install -y mariadb-server redis-server postgresql postgresql-contrib python3-pip python3-venv gcc g++ cmake \
     && useradd -m -p "\$6\$AyOAQ1vh\$CcIXBW4cJopgUVKsTcxlGplUZ382K4yIxIAHhqmEewzJdc6x0MmbSDDQJ1DR.4eueGlYTf2ZbUl9oAQaUQEoi1" -s /bin/bash user \
     && usermod -aG sudo user \
     && echo "user ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/user \
