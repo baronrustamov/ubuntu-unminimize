@@ -10,7 +10,7 @@
 #-v /path/to/conf.template:/etc/nginx/templates/conf.template	Mount template files inside /etc/nginx/templates. They will be processed and the results will be placed at /etc/nginx/conf.d. (e.g. listen ${NGINX_PORT}; will generate listen 80;).
 #-v /path/to/nginx.conf:/etc/nginx/nginx.conf
 
-#docker prune -a
+#docker builder prune -a
 #docker image rm ubuntu-run
 #docker build -t ubuntu-run . 
 
