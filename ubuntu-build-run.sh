@@ -12,7 +12,8 @@
 
 docker builder prune -a
 docker image rm ubuntu-run
-docker build -t ubuntu-run . 
-docker run -p 8080:80 --rm -it -v /Users/shapiroisme/Documents/vscode/:/home/user/ ubuntu-run
+docker build -t ubuntu-run .
+docker run -p 8080:80 --rm -it ubuntu-run
+#docker run -p 8080:80 --rm -it -v /Users/shapiroisme/Documents/vscode/:/home/user/ ubuntu-run
 
 # docker builder prune -a

@@ -32,8 +32,11 @@ RUN set -xe \
 
 USER user:user
 
-# COPY id_rsa /home/user/.ssh
+#COPY id_rsa /home/user/.ssh
 
 WORKDIR /home/user
+
+#RUN set -xe \
+#    && git clone git@github.com:baronrustamov/fork-off-substrate.git
 
 CMD [ "/bin/bash" ]
